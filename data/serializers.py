@@ -49,17 +49,17 @@ class Study_leaveSerializer(serializers.HyperlinkedModelSerializer):
         model = Study_leave
         fields = '__all__'
 
-class PendingSerializer(serializers.HyperlinkedModelSerializer):
+class PendingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Pending
         fields = '__all__'
     
-class DocumentSerializer(serializers.HyperlinkedModelSerializer):
+class DocumentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Document
         fields = '__all__'
 
-class ApprovalSerializer(serializers.HyperlinkedModelSerializer):
+class ApprovalSerializer(serializers.ModelSerializer):
     class Meta:
         model = Approval
         fields = '__all__'
